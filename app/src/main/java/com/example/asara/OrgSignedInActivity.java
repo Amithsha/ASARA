@@ -1,6 +1,7 @@
 package com.example.asara;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -21,6 +22,8 @@ public class OrgSignedInActivity extends AppCompatActivity {
 
         ImageView camera = findViewById(R.id.camera);
 
+        CardView activeCasesCard = findViewById(R.id.activeCasesCard);
+
         camera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,7 +38,16 @@ public class OrgSignedInActivity extends AppCompatActivity {
                 }
             }
         });
+
+        activeCasesCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(OrgSignedInActivity.this, ActiveCasesFromOrgSignedInActivity.class);
+                startActivity(intent);
+            }
+        });
     }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

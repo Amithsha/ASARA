@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NearbyFailitiesAfterSendinPicActivity"
+    android:orientation="vertical"
+    android:background="@drawable/light_bg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Here are the nearest vet facilities"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="20dp">
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/map_img1"
+        android:scaleType="centerCrop"
+        >
+
+
+
+    </ImageView>
+
+</LinearLayout>

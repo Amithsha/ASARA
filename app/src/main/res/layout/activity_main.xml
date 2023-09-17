@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/home_screen_bg"
+    >
 
     <TextView
         android:layout_width="match_parent"
@@ -261,6 +263,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/aboutUsCard"
                 android:layout_marginTop="10dp"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
@@ -273,17 +276,17 @@
                     android:id="@+id/gridImg4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/active"
+                    android:src="@drawable/about_us"
                     android:scaleType="centerCrop" />
 
                 <TextView
-                    android:id="@+id/gridText4"
+                    android:id="@+id/aboutUs"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:gravity="center"
                     android:layout_marginTop="10dp"
-                    android:text="Active Cases"
+                    android:text="About Us"
                     android:textColor="#6542A8"
                     android:textSize="15dp" />
             </androidx.cardview.widget.CardView>

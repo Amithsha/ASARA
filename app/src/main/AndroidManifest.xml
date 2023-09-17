@@ -30,6 +30,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ASARA">
         <activity
+            android:name=".TrackMyActiveCases"
+            android:exported="false" />
+        <activity
+            android:name=".LocationSimulationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MapImg3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ActiveCasesFromOrgSignedInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NearbyFailitiesAfterSendinPicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SendAllAnimalInfoAndReporteeInfo"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
             android:name=".ReportedCasesActivity"
             android:exported="false" />
         <activity
@@ -43,7 +65,7 @@
             android:exported="true" />
         <activity
             android:name=".SendDetailsActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -66,7 +88,10 @@
 
             <!-- Define intent filters if needed -->
         </activity>
+        <activity android:name=".CaseDetailsActivity">
 
+            <!-- Define intent filters if needed -->
+        </activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBwn6jwiNka-gFyOSGpVlz3FsaXPAbNXSs" />

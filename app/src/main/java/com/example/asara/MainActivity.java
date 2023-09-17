@@ -1,34 +1,50 @@
 package com.example.asara;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.core.app.NotificationCompat;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final int REQUEST_IMAGE_CAPTURE = 1;
     Button registered_animals, case_history, nearest_vet_facility,my_profile,sos;
     CreateLoadLocalData createLoadLocalData;
+    ImageView activeCases;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         CardView authenticateCard = findViewById(R.id.authenticateCard);
         CardView reportNowCard = findViewById(R.id.reportNowCard);
+        CardView aboutUsCard = findViewById(R.id.aboutUsCard);
         CardView nearestVetCard = findViewById(R.id.nearestVnet);
+
 
         authenticateCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, LoginRegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        aboutUsCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, AboutUsActivity.class);
                 startActivity(intent);
             }
         });

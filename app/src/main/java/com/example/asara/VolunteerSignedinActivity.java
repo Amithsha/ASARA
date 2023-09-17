@@ -5,11 +5,9 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
-import android.annotation.SuppressLint;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -19,8 +17,6 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
-
-import com.google.android.material.textview.MaterialTextView;
 
 public class VolunteerSignedinActivity extends AppCompatActivity {
 
@@ -37,11 +33,20 @@ public class VolunteerSignedinActivity extends AppCompatActivity {
         ImageView camera = findViewById(R.id.camera);
         ImageView userprofile = findViewById(R.id.userprofile);
         ImageView reportedCases = findViewById(R.id.userReportedCases);
+        ImageView userTrackCases = findViewById(R.id.userTrackCard);
+
+        userTrackCases.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(VolunteerSignedinActivity.this, TrackMyActiveCases.class);
+                startActivity(intent);
+            }
+        });
 
         reportedCases.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(VolunteerSignedinActivity.this, ReportedCasesActivity.class);
+                Intent intent = new Intent(VolunteerSignedinActivity.this, LocationSimulationActivity.class);
                 startActivity(intent);
             }
         });
@@ -116,7 +121,7 @@ public class VolunteerSignedinActivity extends AppCompatActivity {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "1")
                 .setSmallIcon(R.drawable.ic_notification_icon)
                 .setContentTitle("Alert!!")
-                .setContentText("Need Your Immediate Support !!!!")
+                .setContentText("Ambulance has been assigned !!!!")
                 .setContentIntent(pendingIntent)
                 .setFullScreenIntent(fullScreenIntent, true) // Set fullScreenIntent here
                 .setPriority(NotificationCompat.PRIORITY_HIGH) // Use HIGH priority for Heads-up notification

@@ -1,9 +1,32 @@
 <resources>
     <string name="app_name">ASARA</string>
+    <string name="disease_details_heading">Disease Name: paralyzed dog</string>
+    <string name="disease_details">
+
+    \nFirst Aid Suggestions for paralyzed dog
+
+    \n\nDo:
+
+    \n1. Calm the pet. If necessary, cover with a blanket.
+
+    \n2. Muzzle the pet in order to transport her to the veterinary hospital.
+
+    \n3. Do Not Put Pressure on the Stomach.
+
+    \n\nDon\'t:
+    \n1. Do not assume pet won\'t bite.
+
+    \n2. Do not encourage the pet to move about.
+
+    \n3. Do not medicate pet with over-the-counter or prescription medications unless instructed to do so by a veterinarian.
+
+    \n4. Do not delay evaluation by a veterinarian. This is an emergency.
+    </string>
+    <string name="vision">At our core, we envision a world where every animal receives the care, compassion, and protection it deserves. Our commitment to this vision drives our daily efforts to make a difference in the lives of animals.</string>
+    <string name="rehabilitation">We believe in the importance of animal welfare. We strive to create environments that are nurturing, supportive, and conducive to an animal\'s physical and emotional well-being. Through rehabilitation programs, we help animals recover from trauma, injury, or neglect, with the goal of eventually finding them loving forever homes.</string>
+    <string name="animal_rescue">One of our primary focuses is animal rescue. We work tirelessly to rescue animals in distress, providing them with a safe haven where they can heal and thrive. Our dedicated team of volunteers and professionals is on-call 24/7, ready to respond to emergencies and provide immediate assistance to animals in crisis.</string>
     <string name="profile_image_description">Profile Image</string>
     <string name="username_placeholder">Username Placeholder</string>
     <string name="email_placeholder">Email Placeholder</string>
     <string name="edit_profile">Edit Profile</string>
-
-
 </resources>
